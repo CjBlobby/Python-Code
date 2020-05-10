@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type="text/javascript">
+	function draw() {
+	var canvas = document.getElementById('canvas1');
+	
+	if (canvas.getContext) {
+		var ctx = canvas.getContext('2d');
+		
+		ctx.fillStyle = 'red';		
+		ctx.fillRect(600,290,100,100);
+		
+		ctx.fillStyle= 'yellow';
+		ctx.beginPath();
+		ctx.moveTo(100,100);
+		ctx.lineTo(0,240);
+		ctx.lineTo(200,240);
+		ctx.fill();
+		
+		ctx.fillStyle= 'rgba(0,0,255,0.5)';
+		ctx.beginPath();
+		ctx.arc(600,290,50,0, 2*Math.PI, false);
+		ctx.fill();
+		
+		}
+		}
+		
+</script>
+<title>
+	Square
+</title>
+
+	<style type="text/css">
+	canvas { border: 10px transparent; }
+	</style>
+	
+</head>
+
+<body onload="draw();">
+<canvas id="canvas1" width="1300" height="680"
+
+</body>
+</html>
